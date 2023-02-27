@@ -1,92 +1,23 @@
-.navbar-container{
-    width: 100%;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4% 5%;
 }
 
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
-    background-color: #333;
-    height: 80px;
-    width: 100%;
-    max-width: 1000px;
+.headerTitle{
+  text-align: start;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  color: #373435;
 }
 
-.nav h1{
-    color: white;
+.headerTitle span{
+  font-size: 1.8rem;
+  font-weight: 800;
 }
 
-.nav ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    position: absolute;
-    top: -700px;
-    left: -2000px;
-    text-align: center;
-}
-
-.nav ul.active{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 30%;
-    left: 0;
-    right: 0;
-    text-align: center;
-}
-
-.nav ul li a{
-    text-decoration: none;
-    font-size: 2em;
-    color: white;
-    margin-left: 1em;
-}
-
-.nav ul li a.active{
-    text-decoration: none;
-    font-size: 2em;
-    color: white;
-    margin: 0;
-}
-
-.bg-menu{
-    position: absolute;
-    background-color: #222;
-    top: -1000px;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    transition: all .8s ease-in-out;
-}
-
-.bg-menu.active{
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
-@media only screen and (min-width: 768px){
-    .burger-container{
-        display: none;
-    }
-
-    .nav ul{
-        position: initial;
-        margin: 0;
-    }
-
-    .nav ul li a{
-        font-size: 1em;
-    }
+.menuImg{
+  width: 36px;
 }
