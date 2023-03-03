@@ -1,0 +1,26 @@
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+  background-color: #571158;
+  padding: 2rem 0;
+  position: relative;
+  margin: 0;
+}
+
+.footerTitle{
+  font-weight: 400;
+}
+
+.footerTitle span{
+  font-weight: 800;
+}
+
+.socialIcon{
+  width: 30px;
+  height: auto;
+  margin: 0 .8rem;
+}
