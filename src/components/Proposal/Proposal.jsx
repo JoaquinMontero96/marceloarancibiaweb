@@ -8,7 +8,7 @@ function Proposal() {
         <img src="./img/h2.png" className='subtitleImg' />
         <h2 className='subtitleTxt'><span>PROPUESTAS</span></h2>
       </div>
-      <article>
+      <article className='articleTxt'>
         <section>
           <h3>Lorem ipsum dolor sit amet.</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aperiam ex quos! Ratione delectus deleniti deserunt blanditiis. Fuga, modi debitis?</p>

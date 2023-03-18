@@ -12,14 +12,20 @@ const PhotoGallery = () => {
 
   return (
     <>
-      <PhotoAlbum
-        layout="masonry"
-        photos={photos}
-        columns={1}
-        // targetRowHeight={150}
-        padding={10}
-        onClick={({ index }) => setIndex(index)}
-      />
+      <div className='subtitle'>
+        <img src="./img/h2.png" className='subtitleImg' />
+        <h2 className='subtitleTxt'>GALERÍA DE <span>IMAGENES</span></h2>
+      </div>
+      <div style={{padding:'2rem 1rem'}}>
+        <PhotoAlbum
+          layout="masonry"
+          photos={photos}
+          columns={1}
+          spacing={16}
+          // targetRowHeight={150}
+          onClick={({ index }) => setIndex(index)}
+        />
+      </div>
 
       <Lightbox
         styles={{ container: { backgroundColor: "rgba(0, 0, 0, .9)" } }}
