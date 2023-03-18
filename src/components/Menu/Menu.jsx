@@ -14,10 +14,10 @@ function Menu() {
       <button className='navbar__btn' onClick={toggleMenu}>|||</button>
       <ul className={`navbar-menu ${menuOpen ? 'navbar-menu--open' : ''}`} >
         <button className='navbar-menu__btn' onClick={toggleMenu}>X</button>
-        <li className='navbar-menu__item'>¿QUIÉN SOY?</li>
-        <li className='navbar-menu__item'>PROPUESTAS</li>
-        <li className='navbar-menu__item'>IMÁGENES</li>
-        <li className='navbar-menu__item'>CONTACTO</li>
+        <li className='navbar-menu__item'><a href="#bio" onClick={toggleMenu}>¿QUIÉN SOY?</a></li>
+        <li className='navbar-menu__item'><a href="#proposal" onClick={toggleMenu}>PROPUESTAS</a></li>
+        <li className='navbar-menu__item'><a href="#galeria" onClick={toggleMenu}>IMÁGENES</a></li>
+        <li className='navbar-menu__item'><a href="#contact" onClick={toggleMenu}>CONTACTO</a></li>
       </ul>
     </nav>
   )

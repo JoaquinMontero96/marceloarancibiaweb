@@ -11,9 +11,9 @@ const PhotoGallery = () => {
   const [index, setIndex] = useState(-1);
 
   return (
-    <>
+    <div id='galeria'>
       <div className='subtitle'>
-        <img src="./img/h2.png" className='subtitleImg' />
+        <img src="./img/h2.png" className='subtitleImg' alt=''/>
         <h2 className='subtitleTxt'>GALERÍA DE <span>IMAGENES</span></h2>
       </div>
       <div style={{padding:'2rem 1rem'}}>
@@ -34,7 +34,7 @@ const PhotoGallery = () => {
         close={() => setIndex(-1)}
         slides={slides}
       />
-    </>
+    </div>
   );
 };
 

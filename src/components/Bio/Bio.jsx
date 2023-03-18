@@ -3,9 +3,9 @@ import './Bio.css';
 
 function Bio() {
   return (
-    <section>
+    <section id='bio'>
       <div className='subtitle'>
-        <img src="./img/h2.png" className='subtitleImg' />
+        <img src="./img/h2.png" className='subtitleImg' alt=''/>
         <h2 className='subtitleTxt'>¿QUIÉN <span>SOY</span>?</h2>
       </div>
       <article>

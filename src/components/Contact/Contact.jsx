@@ -3,9 +3,9 @@ import './Contact.css';
 
 function Contact() {
   return (
-    <section className='contactSection'>
+    <section id='contact' className='contactSection'>
       <div className='subtitle'>
-        <img src="./img/h2.png" className='subtitleImg' />
+        <img src="./img/h2.png" className='subtitleImg' alt=''/>
         <h2 className='subtitleTxt'><span>CONTACTO</span></h2>
       </div>
       <article className='contactContainer'>

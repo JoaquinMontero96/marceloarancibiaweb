@@ -58,7 +58,7 @@
 .navbar-menu{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     background-color: #571158;
     width: 70%;
     height: 100%;
@@ -67,7 +67,7 @@
     top: -50%;
     left: 135%;
     transform: translate(-50%, -50%);
-    text-align: start;
+    text-align: flex-start;
     transition: left .4s ease;
     z-index: 100;
     margin: 0;
