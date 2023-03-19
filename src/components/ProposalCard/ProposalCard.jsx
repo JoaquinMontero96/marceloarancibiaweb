@@ -3,7 +3,7 @@ import './ProposalCard.css';
 
 function ProposalCard({url, title, txt}) {
   return (
-    <div className='proposalCard'>
+    <div data-aos='fade-up' className='proposalCard'>
       <img className='proposalCard__img' src={url} alt="" />
       <h2 className='proposalCard__title'>{title}</h2>
       <p className='proposalCard__txt'>{txt}</p>

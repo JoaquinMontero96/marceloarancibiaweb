@@ -12,11 +12,11 @@ const PhotoGallery = () => {
 
   return (
     <div id='galeria'>
-      <div className='subtitle'>
+      <div data-aos="fade-right" className='subtitle'>
         <img src="./img/h2.png" className='subtitleImg' alt=''/>
         <h2 className='subtitleTxt'>GALERÍA DE <span>IMAGENES</span></h2>
       </div>
-      <div style={{padding:'2rem 1rem'}}>
+      <div data-aos='fade-up' style={{padding:'2rem 1rem'}}>
         <PhotoAlbum
           layout="masonry"
           photos={photos}

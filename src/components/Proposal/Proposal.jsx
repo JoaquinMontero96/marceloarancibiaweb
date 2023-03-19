@@ -5,7 +5,7 @@ import './Proposal.css';
 function Proposal() {
   return (
     <section id='proposal'>
-      <div className='subtitle'>
+      <div data-aos="fade-right" className='subtitle'>
         <img src="./img/h2.png" className='subtitleImg' alt=''/>
         <h2 className='subtitleTxt'><span>PROPUESTAS</span></h2>
       </div>
