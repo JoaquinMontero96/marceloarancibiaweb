@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import './PhotoGallery.css';
 
 import PhotoAlbum from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
@@ -6,21 +7,29 @@ import "yet-another-react-lightbox/styles.css";
 
 import photos from "../../data/photos";
 import slides from "../../data/slides";
+import Subtitle from '../Subtitle/Subtitle';
 
 const PhotoGallery = () => {
   const [index, setIndex] = useState(-1);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(()=>{
+    function actualizarWindowWidth() {
+      setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener("resize", actualizarWindowWidth);
+    return () => window.removeEventListener("resize", actualizarWindowWidth);
+  }, []);
 
   return (
     <div id='galeria'>
-      <div data-aos="fade-right" className='subtitle'>
-        <img src="./img/h2.png" className='subtitleImg' alt=''/>
-        <h2 className='subtitleTxt'>GALERÍA DE <span>IMAGENES</span></h2>
-      </div>
-      <div data-aos='fade-up' style={{padding:'2rem 1rem'}}>
+      <Subtitle text={'GALERÍA DE IMÁGENES'} />
+      <div className='galleryContainer' data-aos='fade-up' data-aos-duration="1000">
         <PhotoAlbum
           layout="masonry"
           photos={photos}
-          columns={1}
+          columns={windowWidth > 1024 ? 3 : windowWidth > 768 ? 2 : 1}
           spacing={16}
           // targetRowHeight={150}
           onClick={({ index }) => setIndex(index)}

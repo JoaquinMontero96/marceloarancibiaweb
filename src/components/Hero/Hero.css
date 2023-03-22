@@ -1,4 +1,23 @@
 .heroImg{
+  display: none;
   width: 100%;
   height: auto;
+  margin-bottom: 1rem;
+}
+
+.heroImgPc{
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .heroImg{
+    display: flex;
+  }
+
+  .heroImgPc{
+    display: none;
+  }
 }

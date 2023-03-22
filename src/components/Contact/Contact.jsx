@@ -1,14 +1,13 @@
 import React from 'react';
+import Form from '../Form/Form';
+import Subtitle from '../Subtitle/Subtitle';
 import './Contact.css';
 
 function Contact() {
   return (
     <section id='contact' className='contactSection'>
-      <div data-aos="fade-right" className='subtitle'>
-        <img src="./img/h2.png" className='subtitleImg' alt=''/>
-        <h2 className='subtitleTxt'><span>CONTACTO</span></h2>
-      </div>
-      <article data-aos='fade-up' className='contactContainer'>
+      <Subtitle text={'CONTACTO'} />
+      <article data-aos='fade-up' data-aos-duration="1000" className='contactContainer'>
         <section>
           <div>
             <div className='contactItem'>
@@ -23,7 +22,7 @@ function Contact() {
           <div>
             <div className='contactItem'>
               <img src="./img/face.png" alt="" />
-              <p>marceloalberto.arancibia</p>
+              <p>marceloarancibia</p>
             </div>
             <div className='contactItem'>
               <img src="./img/insta.png" alt="" />
@@ -33,6 +32,7 @@ function Contact() {
               <img src="./img/twitter.png" alt="" />
               <p>@MarceArancibia_</p>
             </div>
+            <Form />
           </div>
         </section>
       </article>

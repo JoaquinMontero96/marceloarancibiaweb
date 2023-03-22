@@ -1,14 +1,12 @@
 import React from 'react';
 import ProposalCard from '../ProposalCard/ProposalCard';
+import Subtitle from '../Subtitle/Subtitle';
 import './Proposal.css';
 
 function Proposal() {
   return (
     <section id='proposal'>
-      <div data-aos="fade-right" className='subtitle'>
-        <img src="./img/h2.png" className='subtitleImg' alt=''/>
-        <h2 className='subtitleTxt'><span>PROPUESTAS</span></h2>
-      </div>
+      <Subtitle text={'PROPUESTAS'} />
       <article className='proposalContainer'>
         <ProposalCard
           url='./img/icons/educacion.png'

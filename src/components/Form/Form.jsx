@@ -1,0 +1,51 @@
+import React, { useState } from 'react';
+import './Form.css';
+import emailjs from 'emailjs-com';
+
+function Form() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    emailjs.sendForm('service_8yw4emt', 'template_ffg3jsp', event.target, 's_YsfARjJGQEled-p')
+      .then((response) => {
+        console.log('Email sent:', response.status, response.text);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+
+    setName('');
+    setEmail('');
+    setSubject('');
+    setMessage('');
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        Nombre:
+        <input name='name' type="text" value={name} onChange={(event) => setName(event.target.value)} required/>
+      </label>
+      <label>
+        Email:
+        <input name='email' type="email" value={email} onChange={(event) => setEmail(event.target.value)} required/>
+      </label>
+      <label>
+        Asunto:
+        <input name='subject' type="text" value={subject} onChange={(event) => setSubject(event.target.value)} required/>
+      </label>
+      <label>
+        Mensaje:
+        <textarea name='message' value={message} onChange={(event) => setMessage(event.target.value)} required/>
+      </label>
+      <button type="submit">Send</button>
+    </form>
+  );
+};
+
+export default Form

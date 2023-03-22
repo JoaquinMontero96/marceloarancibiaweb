@@ -1,0 +1,10 @@
+.galleryContainer{
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 1024px){
+  .galleryContainer{
+    padding: 2rem 5rem;
+  }
+}

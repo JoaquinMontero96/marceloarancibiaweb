@@ -1,33 +1,5 @@
-.subtitle{
-  display: flex;
-  position: relative;
-  align-items: center;
-  width: 70%;
-}
-
-.subtitleImg{
-  width: 100%;
-  height: auto;
-  position: absolute;
-  z-index: -1;
-}
-
-.subtitleTxt{
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 1.4rem;
-  color: #fff;
-  text-align: end;
-  width: 100%;
-  margin-right: 1rem;
-}
-
-.subtitleTxt span{
-  font-weight: 800;
-}
-
-.sectionImg{
-  width: 100%;
+.bioImg{
+  width: 80%;
   height: auto;
   margin: 2rem;
 }
@@ -42,4 +14,35 @@
 .articleTxt p {
   font-size: 1rem;
   text-align: start;
+}
+
+@media screen and (min-width: 768px){
+  .articleTxt p{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .articleTxt{
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .articleTxt p{
+    font-size: 1.1rem;
+    text-align: start;
+  }
+
+  .articleTxt{
+    padding: 0 1.5rem;
+  }
+
+  .bioArticle{
+    flex-direction: row;
+    padding: 0 5%;
+  }
+
+  .bioImg{
+    width: 30%;
+  }
 }

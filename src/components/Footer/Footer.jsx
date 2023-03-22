@@ -7,7 +7,7 @@ function Footer() {
       <div>
         <h2 className='footerTitle'>Marcelo<span>Arancibia</span></h2>
       </div>
-      <div>
+      <div className='footerInfo'>
         <p>© 2023 | Marcelo Arancibia</p>
         <p>Todos los derechos reservados.</p>
       </div>

@@ -1,6 +1,12 @@
 .proposalCard{
-  padding: 0 1rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
   margin: 1.5rem 0;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 }
 
 .proposalCard__img{
@@ -14,5 +20,40 @@
 }
 
 .proposalCard__txt{
-  text-align: start;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px){
+  .proposalCard__title{
+    margin: 2rem 0;
+    font-size: 2rem;
+  }
+
+  .proposalCard__txt{
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .proposalCard__title{
+    font-size: 1.5rem;
+  }
+
+  .proposalCard{
+    width: 40%;
+    height: 450px;
+    margin: 2rem;
+    border-radius: 15px;
+    transition: transform .4s ease !important;
+  }
+
+  .proposalCard:hover{
+    transform: translateY(-10px) !important;
+  }
+
+  .proposalCard__txt{
+    font-size: 1.1rem;
+    padding: 0 1.1rem;
+  }
 }
