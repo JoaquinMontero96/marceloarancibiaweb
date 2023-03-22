@@ -9,6 +9,7 @@ footer{
   padding: 2rem 0;
   position: relative;
   margin: 0;
+  border-top: 10px solid #e23e3c;
 }
 
 .footerTitle{
@@ -22,7 +23,7 @@ footer{
 .socialIcon{
   width: 30px;
   height: auto;
-  margin: 0 .8rem;
+  margin: 0 .5rem;
 }
 
 @media screen and (min-width: 768px){
@@ -32,5 +33,17 @@ footer{
 
   .footerInfo{
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .socialIcon{
+    width: 24px;
+  }
+
+  .footerInfo{
+    font-size: 1rem;
+    display: flex;
+    gap: 5px;
   }
 }

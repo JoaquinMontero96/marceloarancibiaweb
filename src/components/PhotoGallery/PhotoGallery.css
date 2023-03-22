@@ -3,8 +3,21 @@
   margin: 2rem 0;
 }
 
+#galeria{
+  padding: 3rem 0;
+}
+
 @media screen and (min-width: 1024px){
   .galleryContainer{
     padding: 2rem 5rem;
+  }
+
+  #galeria{
+    background-image: url(../../../public/img/sj2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 5rem 0;
   }
 }

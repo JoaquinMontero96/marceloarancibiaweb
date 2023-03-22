@@ -26,24 +26,24 @@ function Form() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form id='form' onSubmit={handleSubmit}>
       <label>
-        Nombre:
+        <p>NOMBRE (*)</p>
         <input name='name' type="text" value={name} onChange={(event) => setName(event.target.value)} required/>
       </label>
       <label>
-        Email:
+        <p>EMAIL (*)</p>
         <input name='email' type="email" value={email} onChange={(event) => setEmail(event.target.value)} required/>
       </label>
       <label>
-        Asunto:
+        <p>ASUNTO (*)</p>
         <input name='subject' type="text" value={subject} onChange={(event) => setSubject(event.target.value)} required/>
       </label>
       <label>
-        Mensaje:
+        <p>MENSAJE (*)</p>
         <textarea name='message' value={message} onChange={(event) => setMessage(event.target.value)} required/>
       </label>
-      <button type="submit">Send</button>
+      <button className='sendBtn' type="submit">ENVIAR</button>
     </form>
   );
 };

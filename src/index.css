@@ -23,10 +23,6 @@ a{
   text-decoration: none;
 }
 
-section{
-  margin: 3rem 0;
-}
-
 article{
   display: flex;
   flex-direction: column;
