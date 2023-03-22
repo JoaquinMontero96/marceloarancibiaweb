@@ -5,6 +5,11 @@
   padding: 2rem 0;
 }
 
+.g-recaptcha{
+  margin: auto;
+  margin-bottom: 10px;
+}
+
 input, textarea{
   width: 80%;
   min-width: 80%;

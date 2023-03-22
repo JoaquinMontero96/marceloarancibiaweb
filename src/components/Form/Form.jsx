@@ -26,7 +26,7 @@ function Form() {
   }
 
   return (
-    <form id='form' onSubmit={handleSubmit}>
+    <form action="contact.php" method="POST" id='form' onSubmit={handleSubmit}>
       <label>
         <p>NOMBRE (*)</p>
         <input name='name' type="text" value={name} onChange={(event) => setName(event.target.value)} required/>
@@ -43,6 +43,7 @@ function Form() {
         <p>MENSAJE (*)</p>
         <textarea name='message' value={message} onChange={(event) => setMessage(event.target.value)} required/>
       </label>
+      <div class="g-recaptcha" data-sitekey="6LdnXCMlAAAAAAuEBSre5hz96E5PCUyAjKNmvzbI"></div>
       <button className='sendBtn' type="submit">ENVIAR</button>
     </form>
   );
