@@ -1,0 +1,11 @@
+.team{
+  margin: 2rem 0 8rem 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  max-width: 1440px;
+  margin: 3rem auto;
+}
