@@ -4,8 +4,8 @@ import './Hero.css';
 function Hero() {
   return (
     <>
-      <img data-aos='fade-in' data-aos-duration="2000" src="./img/portada.jpg" alt="Portada web de Marcelo Arancibia" className='heroImg' />
-      <div className='heroImgPc' />
+      <img data-aos='fade-in' data-aos-duration="1000" src="./img/portada.jpg" alt="Marcelo Arancibia en el Jardín de los Poetas, Rivadavia" className='heroImg' />
+      <div data-aos='fade-in' data-aos-duration="1000" className='heroImgPc' />
     </>
   )
 }
