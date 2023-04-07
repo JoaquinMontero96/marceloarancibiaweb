@@ -31,7 +31,6 @@ const PhotoGallery = () => {
           photos={photos}
           columns={windowWidth > 1024 ? 3 : windowWidth > 768 ? 2 : 1}
           spacing={16}
-          // targetRowHeight={150}
           onClick={({ index }) => setIndex(index)}
         />
       </div>
